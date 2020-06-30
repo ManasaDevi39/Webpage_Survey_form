@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container" >
+  <header>
+  <h1 id="title" class="center" >FreeCodeCamp Survey</h1>
+  <p id="description" class="center">Thanks for helping in the survey</p>
+  </header>
+  <form id="survey-form">
+    <div id="form-group">
+      <label for="name" id="name-label" >Name</label>
+      <input id="name" type="text" placeholder="Enter your full-name" class="form-control" required>
+    </div>
+    <div id="form-group">
+      <label for="email" id="email-label">E-mail</label>
+      <input id="email" type="email" placeholder="Enter valid email address" class="form-control" required>
+    </div> 
+    <div id="form-group">
+      <label for="number" id="number-label"> Age</label>
+      <input id="number" type="number" placeholder="Enter your age" min="10" max="99" class="form-control">
+      <div id="form-group">
+      <p>Your current role</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select a role</option>
+         <option value="student"> student</option>
+        <option value="full-time job"> employee </option>
+        <option value="learner"> Learner</option>
+      </select>
+      </div>
+      <div id="form-group">
+        <p>Would you recommend this site to others?</p>
+        <label>
+          <input type="radio" name="quality" value="Yes" checked>Yes</label>
+         <label>
+          <input type="radio" name="quality" value="no" >No</label>
+      </div>
+      <div id="form-group">
+        <p>What are you interested in learning?</p>
+        <label>
+          <input type="checkbox" name="interest" value="fed">Front-end
+        </label>
+        <label>
+          <input type="checkbox" name="interest" value="bed">Back-end
+        </label>
+         <label>
+          <input type="checkbox" name="interest" value="fs">Full-stack
+        </label>
+      </div>
+      <div id="form-group">
+        <p>Wrie your comments here.</p>
+        <textarea  placeholder="enter your comments here" class="form-control"></textarea>
+      </div>
+        <div id="form-group">
+          <button type="submit" id="submit" class="form-control submitbutton"> Submit</button>
+        </div>
+      
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
